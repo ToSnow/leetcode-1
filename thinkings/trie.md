@@ -12,7 +12,7 @@
 
 ## 基本概念
 
-假想一个场景：给你若干单词 words 和一系列关键字 keywords，让你判断 keywords 是否在 words 中存在，或者判断 keywords 中的单词是否有 words 中的单词的前缀。比 pre 就是 pres 的前缀**之一**。
+假想一个场景：给你若干单词 words 和一系列关键字 keywords，让你判断 keywords 是否在 words 中存在，或者判断 keywords 中的单词是否有 words 中的单词的前缀。比如 pre 就是 pres 的前缀**之一**。
 
 朴素的想法是遍历 keywords，对于 keywords 中的每一项都遍历 words 列表判断二者是否相等，或者是否是其前缀。这种算法的时间复杂度是 $O(m * n)$，其中 m 为 words 的平均长度，n 为 keywords 的平均长度。那么是否有可能对其进行优化呢？答案就是本文要讲的前缀树。
 
